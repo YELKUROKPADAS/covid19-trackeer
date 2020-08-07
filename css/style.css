@@ -1,0 +1,14 @@
+body {
+    background-color: #a4f8f8;
+}
+
+img{
+    height: 100px ;
+}
+
+#countries{
+    border: 0px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+}

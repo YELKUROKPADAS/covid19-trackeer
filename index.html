@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 tracker</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="row">
+            <div class="col-12">
+
+                <img src="img/rec.png" alt="App logo" />
+                <h1 class="d-inline">
+                    Yison covid-19 Tracker
+                </h1>
+            </div>
+        </section>
+
+        <section class="row">
+
+            <div class="col-12">
+                <span id="country" class="mr-3"> Ghana's stats</span>
+                &verbar;
+
+                <select name="" id="countries" class="ml-3" class="shadow-sm">
+                    <option value="">select a country</option>
+                </select>
+                </option>
+            </div>
+
+        </section>
+
+        <section class="row my-3">
+
+
+            <div class="col-3">
+                <div class=" text-white bg-info shadow rounded pl-3 py-4">
+                    <span> Total cases</span>
+                    <h3 class="cases" id="total">Loading...</h3>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="text-white bg-success shadow rounded pl-3 py-4">
+                    <span> Recovered</span>
+                    <h3 class="cases" id="recovered">Loading...</h3>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="text-white bg-danger shadow rounded pl-3 py-4">
+                    <span> Active cases</span>
+                    <h3 class="cases" id="active">Loading...</h3>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="text-white bg-dark shadow-sm rounded pl-3 py-4">
+                    <span> Death</span>
+                    <h3 class="cases" id="death">Loading...</h3>
+                </div>
+            </div>
+
+
+
+
+        </section>
+        <section class="row">
+            <div class="col-12">
+                <table class="table table-hover">
+                    <thead>
+                        <th>#</th>
+                        <th>Country</th>
+                        <th>Recovered</th>
+                        <th>Active cases</th>
+                        <th>Deaths</th>
+                    </thead>
+                    <tbody id="all countries">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+
+</html>

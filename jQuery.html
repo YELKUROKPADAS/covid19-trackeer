@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container mt-4">
+
+        <textarea
+        class="form-control"
+         name="" 
+         id="msg"
+          cols="30"
+           rows="10"></textarea>
+           <botton class="btn btn-success"id="submit">submit</botton>"
+           <div id="result" class=" badge badge-success p-4"></div>
+
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script>
+
+    $("#submit").on("click",function(){
+        if($("#msg").val() == "") {
+            $("#result").text("There is nothing to show here!");
+        }else{
+            $("#result").text($("#msg").val());
+        }
+    });
+        </script>
+</body>
+</html>
